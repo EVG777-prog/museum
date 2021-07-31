@@ -4,6 +4,16 @@
 }
 
 @font-face {
+    font-family: Roboto-B;
+    src: url("assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: Roboto-M;
+    src: url("assets/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
     font-family: Forum;
     src: url("assets/fonts/Forum-Regular.ttf");
 }
@@ -12,24 +22,20 @@ html {
     scroll-behavior: smooth;
     font-family: "Roboto";
     font-size: 22px;
+    letter-spacing: 2px;
 }
 
 li {
     list-style: none;
-    padding: 30px;
+    padding: 25px;
 }
 
-ul {
+.ul-nav-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 720px;
 }
-
-
-/* nav {
-    color: #9D8665;
-} */
 
 hr {
     background-color: #710707;
@@ -68,38 +74,66 @@ a:active {
     color: #9D8665;
 }
 
-.button {
+.logo {
+    font-family: "Forum";
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 5px;
+    width: 100%;
+    position: relative;
+    left: 20px;
+}
+
+.button-discover {
     /* display: block; */
     width: 360px;
     height: 75px;
     background-color: #710707;
     text-align: center;
-    vertical-align: middle;
+    line-height: 75px;
 }
 
 .section {
     padding: 75px 75px;
-    /* border: 1px solid red; */
+    border: 1px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
 
 .container {
-    margin: 0 auto;
+    border: 1px solid red;
+    margin: 0px;
     max-width: 1440px;
-    /* width: calc(100% - 40px); */
+    width: calc(100%);
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: flex-start;
 }
 
+.sm {
+    max-width: 300px;
+    height: 150px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 24px;
+    position: absolute;
+    left: 1117px;
+}
+
 .container-col {
     flex-direction: column;
+}
+
+.cont-centr {
+    align-items: center;
 }
 
 .heading {
     font-family: "Forum";
     text-transform: uppercase;
-    font-size: 80px;
+    font-size: 90px;
     letter-spacing: 5px;
     width: 100%;
 }
@@ -128,6 +162,7 @@ a:active {
 }
 
 .header-container {
+    padding: 75px;
     /* max-width: 1440px; */
     background-color: #030303;
 }
@@ -152,11 +187,32 @@ a:active {
 
 .tickets-section {}
 
-.footer-container {}
+.footer-container {
+    padding: 75px;
+    height: 150px;
+}
+
+.ul-nav-down {
+    columns: 2;
+    position: absolute;
+    left: 340px;
+    height: 150px;
+    width: 366px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 10%;
+    /* max-width: 300px; */
+    /* position: relative; */
+    /* right: 100px; */
+}
+
+
+/* li {
+    list-style: none;
+    padding: 30px;
+} */
 
 .text-small {
-    /* padding: 0px;
-    margin: 0px; */
     font-size: 18px;
 }
 
@@ -166,9 +222,7 @@ a:active {
     background: #030303;
     border: 3px solid white;
     text-align: center;
-    vertical-align: text-top;
-    padding-left: 30px;
-    padding-right: 30px;
+    vertical-align: middle;
 }
 
 #radio {
@@ -181,6 +235,13 @@ a:active {
 
 #buy-tickets {
     align-items: flex-start;
+}
+
+#button-buy-tickets {
+    width: 175px;
+    height: 50px;
+    font-size: 22px;
+    letter-spacing: 2px;
 }
 
 .underline-tour {
@@ -213,4 +274,157 @@ a:active {
     width: 100%;
     height: 3px;
     background-color: #710707;
+}
+
+#video-player {
+    position: relative;
+    width: 1440px;
+    height: 85px;
+    background: #030303;
+}
+
+#button-back {
+    position: absolute;
+    top: 28px;
+    left: 45px;
+    width: 26px;
+    height: 30px;
+    background-color: #030303;
+    background-image: url(/assets/svg/Back.svg);
+    color: #FFFFFF;
+    border: none;
+}
+
+#button-play {
+    position: absolute;
+    top: 28px;
+    left: 109px;
+    width: 23px;
+    height: 30px;
+    background-color: #030303;
+    background-image: url(/assets/svg/Play.svg);
+    color: #FFFFFF;
+    border: none;
+}
+
+#button-next {
+    position: absolute;
+    top: 28px;
+    left: 173px;
+    width: 26px;
+    height: 29px;
+    background-color: #030303;
+    background-image: url(/assets/svg/Next.svg);
+    color: #FFFFFF;
+    border: none;
+}
+
+#button-volume {
+    position: absolute;
+    top: 28px;
+    left: 1102px;
+    width: 38px;
+    height: 30px;
+    background-color: #030303;
+    background-image: url(/assets/svg/Volume.svg);
+    color: #FFFFFF;
+    border: none;
+}
+
+#button-full-screen {
+    position: absolute;
+    top: 25px;
+    left: 1363px;
+    width: 36px;
+    height: 36px;
+    background-color: #030303;
+    background-image: url(/assets/svg/FullScreen.svg);
+    color: #FFFFFF;
+    border: none;
+}
+
+.img-logo {
+    position: relative;
+    top: 25px;
+}
+
+#big-play {
+    position: relative;
+    top: 450px;
+    left: 600px;
+    background: none;
+    border: none;
+}
+
+.progress {
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
+    border: solid 2px #82CFD0;
+    border-radius: 8px;
+    height: 7px;
+    width: 400px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    -webkit-transition: background 450ms ease-in;
+    -moz-transition: background 450ms ease-in;
+    -ms-transition: background 450ms ease-in;
+    -o-transition: background 450ms ease-in;
+}
+
+.progress::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: #434343;
+}
+
+#ppr {
+    position: absolute;
+    top: 37px;
+    left: 241px;
+    width: 820px;
+    height: 8px;
+}
+
+#vr {
+    position: absolute;
+    top: 37px;
+    left: 1160px;
+    width: 155px;
+    height: 8px;
+}
+
+.number-tickets {
+    font-size: 22px;
+    background-color: #030303;
+    color: #FFFFFF;
+    border: none;
+    width: 40px;
+    height: 48px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.count-tickets {
+    width: 30px;
+    height: 38px;
+    font-size: 32px;
+    margin-top: 5px;
+    background-color: #030303;
+    color: aliceblue;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#sum {
+    font-family: Roboto-B;
+    font-size: 28px;
+    letter-spacing: 1.65px;
+}
+
+span {
+    color: #9D8665;
 }

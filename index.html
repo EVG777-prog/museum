@@ -18,9 +18,10 @@
 <body>
     <header class="header-container dark-section">
         <div class="container">
-            <img src="assets/img/Logo.png" alt="Logo">
-            <nav>
-                <ul>
+            <img class="img-logo" src="assets/svg/Piramid.svg" alt="Logo">
+            <p class="logo">Louvre</p>
+            <nav class="ul-nav-top">
+                <ul class="ul-nav-top">
                     <li><a href="#visiting">Visiting</a></li>
                     <li><a href="#explore">Explore</a></li>
                     <li><a href="#video">Video</a></li>
@@ -32,14 +33,15 @@
     </header>
     <main>
         <section class="section dark-section welcome-section" id="welcome">
-            <div class="container">
+            <div class="container cont-centr">
                 <div>
                     <p class="heading">Welcome <br>to the Louvre</p>
-                    <br>
-                    <p>From the castle to the museum</p>
-                    <div class="button">
-                        Discover the Louvre
-                    </div>
+                    <p style="font-size: 28px; letter-spacing: 2px">From the castle to the museum</p>
+                    <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">
+                        <div class="button-discover">
+                            Discover the Louvre
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -92,7 +94,7 @@
                 <div class="explore-text" style="margin-right: 50px;">
                     <p class="heading underline-title">Picture Explore</p>
                     <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
-                    <p>It was cleaned in 1984 to remove a "yellow veil" of dust that had gathered since the previous restoration in the 19th century.</p>
+                    <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
                     <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
                 </div>
                 <div class="explore-picture">
@@ -102,8 +104,18 @@
         </section>
         <section class="section video-section" id="video">
             <div class="container container-col">
-                <video src="assets/video/video.mp4" poster="assets/video/poster.jpg" controls></video>
-                <div class="container ">
+                <button id="big-play"><img src="/assets/img/BigPlay.png" alt="Play"></button>
+                <img src="/assets/img/Video.png" alt="Video">
+                <div id="video-player">
+                    <button id="button-back"></button>
+                    <button id="button-play"></button>
+                    <button id="button-next"></button>
+                    <input id="ppr" type="range" value="40" min="0" max="100" step="1" class="progress">
+                    <button id="button-volume"></button>
+                    <input id="vr" type="range" value="40" min="0" max="100" step="1" class="progress">
+                    <button id="button-full-screen"></button>
+                </div>
+                <div class="container cont-centr">
                     <p class="heading">Video journey</p>
                     <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
                 </div>
@@ -134,23 +146,24 @@
                             </ul>
                         </div>
                         <div>
+
                             <p>Amount</p>
                             <p class="text-small">Basic 18+</p>
                             <div class="container switch">
-                                <p style="font-size: 32px; margin-top: 5px;">- </p>
-                                <p style="font-size: 22px; margin-top: 10px;">1</p>
-                                <p style="font-size: 32px; margin-top: 5px;">+</p>
+                                <button class="count-tickets" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                <input id="count-senior-tickets" type="number" min="0" max="20" value="1" readonly class="number-tickets">
+                                <button class="count-tickets" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                             </div>
                             <p class="text-small">Senior 65+</p>
                             <div class="container switch">
-                                <p style="font-size: 32px; margin-top: 5px;">- </p>
-                                <p style="font-size: 22px; margin-top: 10px;">1</p>
-                                <p style="font-size: 32px; margin-top: 5px;">+</p>
+                                <button class="count-tickets" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                <input id="count-senior-tickets" type="number" min="0" max="20" value="1" readonly class="number-tickets">
+                                <button class="count-tickets" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                             </div>
-                            <p id="sum"><b>Total €220</b></p>
-                            <button id="button-buy-tickets" form="buy-tickets" style="height:50px; width:175px"> Buy Now</button>
+                            <p id="sum">Total €220</p>
+
+                            <button id="button-buy-tickets" form="buy-tickets"> Buy Now</button>
                         </div>
-                        <!-- </div> -->
                     </form>
                 </div>
             </div>
@@ -161,12 +174,14 @@
                 <p class="heading underline-title">Contacts</p>
                 <div class="container">
                     <div>
-                        <p>Palais Royal<br>Musee du Louvre</p>
+                        <p style="font-size: 28px; font-family: Roboto-M; ">Palais Royal<br>Musee du Louvre</p>
                         <p>address: 75001 Paris, France</p>
                         <p>phone: +33(0) 1 40 20 50 50</p>
                         <p>mail: info@louvre.fr</p>
                     </div>
-                    <img src="assets/img/Map.png" alt="Map">
+                    <div>
+                        <img src="assets/img/Map.png " alt="Map">
+                    </div>
                 </div>
             </div>
         </section>
@@ -174,22 +189,32 @@
     </main>
     <footer class="footer-container dark-section">
         <div class="container">
-            <img src="assets/img/Logo.png" alt="Logo">
+
+            <img class="img-logo" src="assets/svg/Piramid.svg" alt="Logo">
+            <p class="logo">Louvre</p>
+
             <nav>
-                <ul>
-                    <li><a href="#welcome">Welcome</a></li>
-                    <li><a href="#visiting">Visiting</a></li>
-                    <li><a href="#explore">Explore</a></li>
-                    <li><a href="#video">Video</a></li>
-                    <li><a href="#tickets">Tickets</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+                <ul class="ul-nav-down">
+                    <li><a href="#welcome ">Welcome</a></li>
+                    <li><a href="#visiting ">Visiting</a></li>
+                    <li><a href="#explore ">Explore</a></li>
+                    <li><a href="#video ">Video</a></li>
+                    <li><a href="#tickets ">Tickets</a></li>
+                    <li><a href="#contacts ">Contacts</a></li>
                 </ul>
             </nav>
+            <div class="container sm">
+                <a href="https://youtube.com"><img src="/assets/svg/Youtube.svg" alt="YouTube"></a>
+                <a href="https://instagram.com"><img src="/assets/svg/Instagram.svg" alt="Instagram"></a>
+                <a href="https://facebook.com"><img src="/assets/svg/Facebook.svg" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="/assets/svg/Twitter.svg" alt="Twitter"></a>
+                <a href="https://pinterest.com"><img src="/assets/svg/Pinterest.svg " alt="Pinterest "></a>
+            </div>
         </div>
 
     </footer>
 </body>
 
-<script src="script.js"></script>
+<script src="script.js "></script>
 
 </html>
