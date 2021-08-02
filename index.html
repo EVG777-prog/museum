@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>museum</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="assets/svg/Piramid.svg">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,148 +17,152 @@
 
 <body>
     <header class="header-container dark-section">
-        <div class="container">
-            <img class="img-logo" src="assets/svg/Piramid.svg" alt="Logo">
-            <p class="logo">Louvre</p>
-            <nav class="ul-nav-top">
+        <div class="container" style="height: 50px;">
+            <div class="logo-top">
+                <img class="img-logo" src="assets/svg/Piramid.svg" alt="Logo">
+                <h1 class="logo">Louvre</h1>
+            </div>
+            <nav>
                 <ul class="ul-nav-top">
-                    <li><a href="#visiting">Visiting</a></li>
-                    <li><a href="#explore">Explore</a></li>
-                    <li><a href="#video">Video</a></li>
-                    <li><a href="#tickets">Tickets</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+                    <li class="li-menu"><a href="#visiting">Visiting</a></li>
+                    <li class="li-menu"><a href="#explore">Explore</a></li>
+                    <li class="li-menu"><a href="#video">Video</a></li>
+                    <li class="li-menu"><a href="#tickets">Tickets</a></li>
+                    <li class="li-menu"><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <section class="section dark-section welcome-section" id="welcome">
-            <div class="container cont-centr">
-                <div>
-                    <p class="heading">Welcome <br>to the Louvre</p>
-                    <p style="font-size: 28px; letter-spacing: 2px">From the castle to the museum</p>
-                    <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">
-                        <div class="button-discover">
-                            Discover the Louvre
-                        </div>
-                    </a>
-                </div>
+            <div class="container container-col container-welcome">
+                <h2 class="heading">Welcome <br>to the Louvre</h2>
+                <p class="welcom-text">From the castle to the museum</p>
+                <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">
+                    <div class="button-discover">
+                        Discover the Louvre
+                    </div>
+                </a>
             </div>
         </section>
         <section class="section visiting-section" id="visiting">
             <div class="container container-col">
-                <p class="heading underline-title">Virtual Tour</p>
+                <h2 class="heading underline-title golg-color">Virtual Tour</h2>
                 <div class="container-tour">
-                    <div id="royal-palace" class="tour">
+                    <a id="royal-palace" class="tour" href="#visiting">
                         <img src="assets/img/Royal Palace.jpg" alt="Royal Palace" height="285" width="440">
-                        <p class="underline-tour">Royal Palace</p>
-                        <p style="margin-bottom: 0px; padding-bottom: 0px;">360 Virtual Tour</p>
-                        <p style="margin-top: 0px; padding-top: 6px;" class="text-small">Google Street Panorama View</p>
-                    </div>
-                    <div id="denon-wing" class="tour">
+                        <h3 class="underline-tour">Royal Palace</h3>
+                        <p class="text-tour-360">360° Virtual Tour</p>
+                        <p class="text-small">Google Street Panorama View</p>
+                    </a>
+                    <a id="denon-wing" class="tour" href="#visiting">
                         <img src="assets/img/Denon Wing.jpg" alt="Denon Wing" height="285" width="440">
-                        <p class="underline-tour">Denon Wing</p>
-                        <p style="margin-bottom: 0px; padding-bottom: 0px;">360 Virtual Tour</p>
-                        <p style="margin-top: 0px; padding-top: 6px;" class="text-small">Google Street Panorama View</p>
-                    </div>
-                    <div id="colonnade-perrault" class="tour">
+                        <h3 class="underline-tour">Denon Wing</h3>
+                        <p class="text-tour-360">360° Virtual Tour</p>
+                        <p class="text-small">Google Street Panorama View</p>
+                    </a>
+                    <a id="colonnade-perrault" class="tour" href="#visiting">
                         <img src="assets/img/Colonnade Perrault.jpg" alt="Colonnade Perrault" height="285" width="440">
-                        <p class="underline-tour">Colonnade Perrault</p>
-                        <p style="margin-bottom: 0px; padding-bottom: 0px;">360 Virtual Tour</p>
-                        <p style="margin-top: 0px; padding-top: 6px;" class="text-small">Google Street Panorama View</p>
-                    </div>
-                    <div id="greek-hall" class="tour">
+                        <h3 class="underline-tour">Colonnade Perrault</h3>
+                        <p class="text-tour-360">360° Virtual Tour</p>
+                        <p class="text-small">Google Street Panorama View</p>
+                    </a>
+                    <a id="greek-hall" class="tour" href="#visiting">
                         <img src="assets/img/Greek Hall.jpg" alt="Greek Hall" height="285" width="440">
-                        <p class="underline-tour">Greek Hall</p>
-                        <p style="margin-bottom: 0px; padding-bottom: 0px;">360 Virtual Tour</p>
-                        <p style="margin-top: 0px; padding-top: 6px;" class="text-small">Google Street Panorama View</p>
-                    </div>
-                    <div id="mona-lisa" class="tour">
+                        <h3 class="underline-tour">Greek Hall</h3>
+                        <p class="text-tour-360">360° Virtual Tour</p>
+                        <p class="text-small">Google Street Panorama View</p>
+                    </a>
+                    <a id="mona-lisa" class="tour" href="#visiting">
                         <img src="assets/img/Mona Lisa.jpg" alt="Mona Lisa" height="285" width="440">
-                        <p class="underline-tour">Mona Lisa</p>
-                        <p style="margin-bottom: 0px; padding-bottom: 0px;">360 Virtual Tour</p>
-                        <p style="margin-top: 0px; padding-top: 6px;" class="text-small">Google Street Panorama View</p>
-                    </div>
-                    <div id="night-palace" class="tour">
+                        <h3 class="underline-tour">Mona Lisa</h3>
+                        <p class="text-tour-360">360° Virtual Tour</p>
+                        <p class="text-small">Google Street Panorama View</p>
+                    </a>
+                    <a id="night-palace" class="tour" href="#visiting">
                         <img src="assets/img/Night Palace.jpg" alt="Night Palace" height="285" width="440">
-                        <p class="underline-tour">Night Palace</p>
-                        <p style="margin-bottom: 0px; padding-bottom: 0px;">360 Virtual Tour</p>
-                        <p style="margin-top: 0px; padding-top: 6px;" class="text-small">Google Street Panorama View</p>
-                    </div>
+                        <h3 class="underline-tour">Night Palace</h3>
+                        <p class="text-tour-360">360° Virtual Tour</p>
+                        <p class="text-small">Google Street Panorama View</p>
+                    </a>
                 </div>
 
             </div>
         </section>
         <section class="section explore-section dark-section" id="explore">
             <div class="container">
-                <div class="explore-text" style="margin-right: 50px;">
-                    <p class="heading underline-title">Picture Explore</p>
-                    <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
-                    <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
-                    <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+                <div class="explore-text container container-col" style="max-width: 660px;">
+                    <h2 class="heading underline-title">Picture Explore</h2>
+                    <p style="line-height: 1.7; margin: 5px 0px;">Las Meninas is a 1656 painting by Diego Velázquez, the leading <br> artist of the Spanish Golden Age.</p>
+                    <p style="line-height: 1.7; margin: 20px 0px;">It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
+                    <p style="line-height: 1.7; margin: 10px 0px;">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
                 </div>
                 <div class="explore-picture">
-                    <img src="assets/img/Picture Explore1.png" alt="Picture 1">
+                    <img src="assets/img/PictureExplore1.jpg" alt="Picture 1">
                 </div>
             </div>
         </section>
         <section class="section video-section" id="video">
-            <div class="container container-col">
+            <div class=" container container-col container-video">
+                <img src="/assets/img/Video.jpg" alt="Video">
                 <button id="big-play"><img src="/assets/img/BigPlay.png" alt="Play"></button>
-                <img src="/assets/img/Video.png" alt="Video">
                 <div id="video-player">
                     <button id="button-back"></button>
                     <button id="button-play"></button>
                     <button id="button-next"></button>
-                    <input id="ppr" type="range" value="40" min="0" max="100" step="1" class="progress">
+                    <input id="ppr" type="range" value="46.5" min="0" max="100" step="1" class="progress">
                     <button id="button-volume"></button>
-                    <input id="vr" type="range" value="40" min="0" max="100" step="1" class="progress">
+                    <input id="vr" type="range" value="46.5" min="0" max="100" step="1" class="progress">
                     <button id="button-full-screen"></button>
                 </div>
                 <div class="container cont-centr">
-                    <p class="heading">Video journey</p>
-                    <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                    <h2 class="heading golg-color" style="margin: 40px 0px 0px; width: 85%;">Video journey</h2>
+                    <p style="line-height: 1.8; margin: 40px 0px 0px;">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
                 </div>
             </div>
 
         </section>
         <section class="section tickets-section dark-section" id="tickets">
             <div class="container container-col">
-                <p class="heading underline-title">Buy tickets</p>
+                <h2 class="heading underline-title">Buy tickets</h2>
                 <div class="container">
-                    <img src="assets/img/Buy tickets.png" alt="Buy tickets">
+                    <img src="assets/img/Buy_tickets.jpg" alt="Buy tickets">
                     <form id="buy-tickets" class="container">
                         <div>
-                            <p style="padding-left: 30px;">Ticket type</p>
+                            <p class="ticket-type-text">Ticket Type</p>
                             <ul id="radio" class="container-col">
                                 <li class="radio">
                                     <input type="radio" name="ticket-type" id="permanent" checked>
-                                    <label for="permanent">Permanent exhibition</label>
+                                    <label class="radio-text" for="permanent">Permanent exhibition</label>
                                 </li>
                                 <li class="radio">
                                     <input type="radio" name="ticket-type" id="temporary">
-                                    <label for="temporary">Temporary exhibition</label>
+                                    <label class="radio-text" for="temporary">Temporary exhibition</label>
                                 </li>
                                 <li class="radio">
                                     <input type="radio" name="ticket-type" id="combined">
-                                    <label for="combined">Combined Admission</label>
+                                    <label class="radio-text" for="combined">Combined Admission</label>
                                 </li>
                             </ul>
                         </div>
-                        <div>
-
-                            <p>Amount</p>
-                            <p class="text-small">Basic 18+</p>
-                            <div class="container switch">
-                                <button class="count-tickets" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                                <input id="count-senior-tickets" type="number" min="0" max="20" value="1" readonly class="number-tickets">
-                                <button class="count-tickets" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        <div class="container container-col" style="align-items: flex-end; width: 300px;">
+                            <p class="text-amount">Amount</p>
+                            <div>
+                                <p class="text-small-buy-tickets">Basic 18+</p>
+                                <div class="container switch">
+                                    <button class="count-tickets" type="button" onclick="this.nextElementSibling.stepDown()">&ndash;</button>
+                                    <input id="count-basic-tickets" type="number" min="0" max="20" value="1" readonly class="number-tickets">
+                                    <button class="count-tickets" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                </div>
                             </div>
-                            <p class="text-small">Senior 65+</p>
-                            <div class="container switch">
-                                <button class="count-tickets" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                                <input id="count-senior-tickets" type="number" min="0" max="20" value="1" readonly class="number-tickets">
-                                <button class="count-tickets" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            <br>
+                            <div>
+                                <p class="text-small-buy-tickets">Senior 65+</p>
+                                <div class="container switch">
+                                    <button class="count-tickets" type="button" onclick="this.nextElementSibling.stepDown()">&ndash;</button>
+                                    <input id="count-senior-tickets" type="number" min="0" max="20" value="1" readonly class="number-tickets">
+                                    <button class="count-tickets" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                </div>
                             </div>
                             <p id="sum">Total €220</p>
 
@@ -171,16 +175,16 @@
         </section>
         <section class="section contacts-section" id="contacts">
             <div class="container container-col">
-                <p class="heading underline-title">Contacts</p>
-                <div class="container">
+                <h2 class="heading underline-title golg-color" style="height: 90px;">Contacts</h2>
+                <div class="container" style="height: 620px;">
                     <div>
-                        <p style="font-size: 28px; font-family: Roboto-M; ">Palais Royal<br>Musee du Louvre</p>
-                        <p>address: 75001 Paris, France</p>
-                        <p>phone: +33(0) 1 40 20 50 50</p>
-                        <p>mail: info@louvre.fr</p>
+                        <p class="text-contact-name">Palais Royal<br>Musee du Louvre</p>
+                        <p class="text-contact">address: 75001 Paris, France</p>
+                        <p class="text-contact">phone: +33(0) 1 40 20 50 50</p>
+                        <p class="text-contact">mail: info@louvre.fr</p>
                     </div>
-                    <div>
-                        <img src="assets/img/Map.png " alt="Map">
+                    <div style="height: 620px;">
+                        <img src="assets/img/Map.png" alt="Map">
                     </div>
                 </div>
             </div>
@@ -188,33 +192,48 @@
 
     </main>
     <footer class="footer-container dark-section">
-        <div class="container">
+        <div class="container container-footer-div">
 
-            <img class="img-logo" src="assets/svg/Piramid.svg" alt="Logo">
-            <p class="logo">Louvre</p>
-
-            <nav>
-                <ul class="ul-nav-down">
-                    <li><a href="#welcome ">Welcome</a></li>
-                    <li><a href="#visiting ">Visiting</a></li>
-                    <li><a href="#explore ">Explore</a></li>
-                    <li><a href="#video ">Video</a></li>
-                    <li><a href="#tickets ">Tickets</a></li>
-                    <li><a href="#contacts ">Contacts</a></li>
+            <div class="logo-top">
+                <img class="img-logo" src="assets/svg/Piramid.svg" alt="Logo">
+                <p class="logo">Louvre</p>
+            </div>
+            <div class="nav-down">
+                <nav>
+                    <ul class="ul-nav-down">
+                        <li class="li-menu"><a href="#welcome">Welcome</a></li>
+                        <li class="li-menu"><a href="#visiting">Visiting</a></li>
+                        <li class="li-menu"><a href="#explore">Explore</a></li>
+                        <li class="li-menu"><a href="#video">Video</a></li>
+                        <li class="li-menu"><a href="#tickets">Tickets</a></li>
+                        <li class="li-menu"><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <ul class="container sm">
+                    <li class="li-sm">
+                        <a class="sm-icon hue" href="https://youtube.com"><img src="/assets/svg/Youtube.svg" alt="YouTube" style="color:brown;"></a>
+                    </li>
+                    <li class="li-sm">
+                        <a href="https://instagram.com"><img src="/assets/svg/Instagram.svg" alt="Instagram"></a>
+                    </li>
+                    <li class="li-sm">
+                        <a href="https://facebook.com"><img src="/assets/svg/Facebook.svg" alt="Facebook"></a>
+                    </li>
+                    <li class="li-sm">
+                        <a href="https://twitter.com"><img src="/assets/svg/Twitter.svg" alt="Twitter"></a>
+                    </li>
+                    <li class="li-sm">
+                        <a href="https://pinterest.com"><img src="/assets/svg/Pinterest.svg" alt="Pinterest"></a>
+                    </li>
                 </ul>
-            </nav>
-            <div class="container sm">
-                <a href="https://youtube.com"><img src="/assets/svg/Youtube.svg" alt="YouTube"></a>
-                <a href="https://instagram.com"><img src="/assets/svg/Instagram.svg" alt="Instagram"></a>
-                <a href="https://facebook.com"><img src="/assets/svg/Facebook.svg" alt="Facebook"></a>
-                <a href="https://twitter.com"><img src="/assets/svg/Twitter.svg" alt="Twitter"></a>
-                <a href="https://pinterest.com"><img src="/assets/svg/Pinterest.svg " alt="Pinterest "></a>
             </div>
         </div>
 
     </footer>
 </body>
 
-<script src="script.js "></script>
+<script src="script.js"></script>
 
 </html>
